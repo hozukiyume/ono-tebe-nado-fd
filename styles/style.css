@@ -1,1 +1,347 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 92px 50px 92px 50px;
+}
+
+.header__menu {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.header__links-list {
+    display: flex;
+    gap: 33px;
+}
+
+.header__links-list-item {
+    list-style: circle;
+    margin-bottom: 4px;
+}
+
+.header__link {
+    text-decoration: underline;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+}
+
+.address {
+    max-width: 240px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    color: #000000;
+}
+
+.header__address {
+    justify-self: end;
+    margin-bottom: 4px;
+}
+
+.cover {
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0 0 0 / 0.6);
+    z-index: 0;
+}
+
+.cover__title {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 165px 50px 106px 50px;
+}
+
+.aligned-text {
+    position: relative;
+    text-align: left;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 50px 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cover__description-text {
+    word-spacing: 18.5px;
+    z-index: 1;
+}
+
+.bet-button {
+    width: 256px;
+    height: 51px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 12px 32px 11px 31px;
+    z-index: 1;
+}
+
+.lots {
+    margin: 180px 24px 120px 24px;
+}
+
+.lots__heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 27px;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    min-width: 334px;
+    min-height: 596px;
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1;
+}
+
+.card__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    z-index: 1;
+}
+
+.lots__look-more-link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 334px auto;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 120px;
+    padding: 0 24px;
+}
+
+.about__logo {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 33px;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    margin-top: 133px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    margin-bottom: 101px;
+}
+
+.about__text-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about__text-question {
+    margin-right: 5px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: start;
+    margin-top: 180px;
+    margin-bottom: 82px;
+    padding: 0 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.footer__address {
+    justify-self: start;
+}
+
+.footer__link {
+    text-decoration: underline;
+}
+
+.footer__menu {
+    justify-self: center;
+}
+
+.footer__menu-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+.footer__menu-list-item {
+    list-style: none;
+    margin-bottom: 1px;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+}
+
+.footer__menu-link-active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    justify-self: end;
+    gap: 48px;
+}
+
+.footer__social-list-item {
+    width: 48px;
+    height: 48px;
+    list-style: none;
+}
+
+.footer__social-link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
